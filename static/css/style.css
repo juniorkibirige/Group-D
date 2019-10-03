@@ -1,0 +1,409 @@
+body {
+    background-color: rgb(83, 95, 63)!important;
+}
+.source .code {
+    text-align: justify!important;
+}
+.wel-text {
+    border: 2px solid grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgb(38, 62, 77);
+    color: rgb(135, 185, 135);
+}
+.wel {
+    background: radial-gradient(#665d5d, rgb(136, 73, 134), rgb(104, 35, 35));
+}
+.bdy {
+    background-color: rgb(38, 62, 77);
+    padding: 5px;
+    padding-top: 63px;
+    height: auto;
+}
+.linear-nav {
+    background-color: grey;
+    width: 35%;
+    margin-left: 35%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.linear-nav li {
+    list-style: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0px 35px 0px 35px;
+    color: #000;
+}
+.top-left-corner {
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+#hostels {
+    color: rgb(243, 233, 214);
+}
+
+.hostel-list{
+    background-color: rgb(86, 143, 124);
+    color: #000000;
+    text-align: left!important;
+}
+.content{
+    width: 60%;
+    margin-left: 30px;
+    transition: all 1s;
+    padding: 10px;
+    border-left: 2px double floralwhite;
+}
+.txt {
+    display: block;
+}
+.sm-scr {
+    display: none;
+}
+ @media screen and (min-width: 200px) {
+    .txt {
+        display: none;
+    }
+    .sm-scr {
+        display: block;
+    }
+    .linear-nav li {
+        margin-left: 0px!important;
+        font-size: 15px;
+        padding: 0px 10px 0px 10px!important;
+        text-align: justify;
+    }
+    body {
+        font-size: 12px;
+    }
+    img.image{
+        width: 50px!important;
+        height: 50px!important;
+        font-size: 8px!important;
+    }
+    .hotel_choreography{
+        margin-left: 80px!important;
+        margin-top: -80px!important;
+    }
+    .prev-button{
+        float: left;
+        margin-left: -20px!important;
+        width: 20px!important;
+        font-size: 12px!important;
+    }
+    .next-button{
+        margin-left: 60px!important;
+        font-size: 12px!important;
+        width: 20px!important;
+    }
+    .prev-button, .next-button{
+        padding: 0px 10px 0px 10px;
+    }
+}
+@media screen and (min-width: 320px){
+    .txt {
+        display: none;
+    }
+    .sm-scr {
+        display: block;
+    }
+    .linear-nav li {
+        margin-left: 0px;
+        text-align: center;
+    }
+    img.image{
+        width: 60px!important;
+        height: 60px!important;
+        margin-left: -3px!important;
+        margin-top: -1px!important;
+        font-size: 10px!important;
+    }
+    .hotel_choreography{
+        margin-left:-3px!important;
+        margin-top: 0px!important;
+        width: 100%;
+    }
+    .hotelName {
+        color: darkcyan;
+        font-size: 15px!important;
+    }
+    .info{
+        font-size: 10px!important;
+    }
+    .h_info{
+        font-size: 12px!important;
+    }
+}
+@media screen and (min-width: 480px) {
+    .txt {
+        display: block;
+    }
+    .sm-scr {
+        display: none;
+    }
+    .hotel_choreography{
+        width: 100%!important;
+        height: auto;
+    }
+    .info {
+        font-size: 12px!important;
+    }
+    .h_info {
+        font-size: 18px!important;
+    }
+}
+@media screen and (min-width: 720px) {
+    img.image {
+        width: 150px!important;
+        height: 150px!important;
+        font-size: 18px!important;
+    }
+    .hotelName {
+        color: darkcyan;
+        font-size: 24px!important;
+    }
+    .hotel_choreography{
+        width: 250px!important;
+        margin-left: 153px!important;
+        margin-top: -152px!important;
+        height: 150px!important;
+    }
+    .info{
+        font-size: 15px!important;
+    }
+}
+@media screen and (min-width: 1200px){
+    img.image {
+        width: 150px!important;
+        height: 150px!important;
+        font-size: 18px!important;
+    }
+    .hotelName {
+        color: darkcyan;
+        font-size: 24px!important;
+    }
+    .hotel_choreography{
+        width: 530px!important;
+        margin-left: 153px!important;
+        margin-top: -152px!important;
+        height: 150px!important;
+    }
+    /* .t{
+
+    } */
+}
+.hotelName{
+    font-size: 24px;
+}
+img.image{
+    margin-bottom: 2px!important;
+    padding: 0px;
+    border-radius: 4px;
+}
+.hotel_choreography{
+    border: 1px solid #665d5d;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: beige;
+}
+.h_info {
+    background-color: rgb(46, 42, 42);
+    color: whitesmoke;
+    text-align: left;
+    padding: 7px;
+    margin-left: -3px;
+    margin-top: 5px;
+}
+.info {
+    color: black;
+}
+.rating{
+    color: green;
+}
+.price {
+    color: darkslategrey;
+}
+span.deal {
+    color: black;
+}
+div.hotels{
+    background-color: dimgrey!important;
+}.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('/inc/loader.gif') 30% 30% no-repeat rgb(249,249,249);
+}
+[class*="hotelList"]{
+    background-color: pink;
+    margin: 10px;
+    padding: 10px;
+}
+.int-list-button{
+    display: inline;
+    vertical-align: middle;
+}
+.prev-button{
+    float: left;
+    margin-left: 25%;
+}
+.next-button{
+    margin-left: 280px;
+}
+.prev-button, .next-button{
+    padding: 0px 15px 0px 15px;
+}
+.numbering {
+    background: transparent!important;
+    font-size: 16px;
+}
+img.mak{
+    width: 80px;
+    height: 80px;
+}
+#top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #top:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+  a.navs.hotels:hover, .no-style:hover, a.no-style:any-link {
+    text-decoration-line: none!important;
+}
+.post-text pre, .wmd-preview pre {
+    word-wrap: normal;
+}
+.prettyprint {
+    display: block;
+    color: #393318;
+}
+pre {
+    max-height: none\9;
+}
+pre {
+    margin-bottom: 1em;
+    padding: 12px 8px;
+    width: auto;
+    max-height: 600px;
+    overflow: auto;
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    font-size: 13px;
+    background-color: #eff0f1;
+    border-radius: 3px;
+    margin: 10px;
+}
+.post-text pre > code:first-child, .wmd-preview pre > code:first-child {
+    max-height: 600px\9;
+    display: block\9;
+}
+.post-text code, .wmd-preview code {
+    font-size: 13px;
+}
+pre code {
+    white-space: inherit;
+    padding: 0;
+}
+code {
+    white-space: pre-wrap;
+    padding: 1px 5px;
+}
+code {
+    font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif;
+    background-color: #eff0f1;
+}
+.output .code {
+    padding: 10px;
+}
+.user{
+    text-align:left;
+    padding: 10px;
+}
+.speed .towers {
+    display: inline-block;
+    margin-left: 20px;
+}
+.pole{
+    background-color: mediumslateblue;
+    width: 5px;
+    height: 100px;
+    display: inline-block;
+    margin: 50px;
+    margin-bottom: 0px!important;
+    border-radius: 5px;
+    position: relative;
+}
+.base{
+    background-color: midnightblue;
+    width: 100%;
+    height: 7px;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+}
+.t{
+    display: inline-block;
+    padding-left: 10px;
+}
+.toh {
+    background-color: #665d5d;
+    padding: 10px;
+    margin: 5px 10px 10px 10px;
+    border-radius: 10px;
+    height: 250px;
+}
+.platter {
+    background-color: brown;
+    width: 20%;
+    height: 7px;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 3px;
+    text-align: center;
+    /* left: 37.8%!important; */
+}
+.play {
+    margin-left: 15px;
+}
+.moveOff{
+    bottom: 150px!important;
+    transition: all 1.5s;
+}
+.moveLeft_twice{
+    left: 56.5%!important;
+    transition: all 1.5s;
+}
+.moveLeft_once{
+    left: 47.2%!important;
+    transition: all 1.5s;
+}
+.moveRight_twice{
+    left: 56.5%!important;
+    transition: all 1.5s;
+}
+.moveRight_once{
+    left: 47.3%!important;
+    transition: all 1.5s;
+}
+.moveOn{
+    bottom: 60px!important;
+    transition: all 1.5s;
+}
