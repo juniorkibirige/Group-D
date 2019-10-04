@@ -38,7 +38,9 @@
                     echo " $('#body').load('/static/content/data.php?dat=".$_GET['dat']."&t=".urlencode($_GET['t'])."&type=".$_GET['type']."&values=".urlencode($_GET['values'])."&num=".$_GET['num']."&data=".$_GET['data']."');";
                 } elseif(isset($_GET['type'])){
                     echo " $('#body').load('/static/content/data.php?dat=".$_GET['dat']."&t=".urlencode($_GET['t'])."&type=".urlencode($_GET['type'])."&data=".$_GET['data']."');";
-                }else echo " $('#body').load('/static/content/data.php?dat=".$_GET['dat']."&t=".urlencode($_GET['t'])."');";
+                } elseif(isset($_GET['lists'])){
+                    echo "$('#body').load('/static/content/lists.php?t=".urlencode($_GET['lists'])."');";
+                } else echo " $('#body').load('/static/content/data.php?dat=".$_GET['dat']."&t=".urlencode($_GET['t'])."');";
                  ?>
                 <?php echo "}
             </script>";

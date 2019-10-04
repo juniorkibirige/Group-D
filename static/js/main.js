@@ -738,7 +738,7 @@ loadPage = (index, title) => {
                     window.location.href = "/ds-content/toh.php?t=" + encodeURI(title);
                 break
             case 13:
-                window.location.href = "/ds-content/lists.php?t=" + encodeURI(title);
+                window.location.href = "/ds-content/content-data.php?lists=" + encodeURI(title)+"&t="+encodeURI(title);
                 break
             default:
                 alert('Page not found. Contact Management')
@@ -804,7 +804,6 @@ $(()=>{
             var disp = document.getElementsByClassName('code_disp');
             var norm = document.getElementsByClassName('code_norm');
             for(var i = 0; i < disp.length; i++){
-                console.log(disp[i])
                 disp[i].style.display = 'none';
                 norm[i].style.display = 'block';
             }
