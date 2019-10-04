@@ -384,7 +384,7 @@ code {
     margin-left: 15px;
 }
 .moveOff{
-    bottom: 150px!important;
+    bottom: 180px!important;
     transition: all 1.5s;
 }
 .moveLeft_twice{

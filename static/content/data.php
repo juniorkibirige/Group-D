@@ -179,7 +179,7 @@ Example operations: Finding an element in a sorted array.</pre>
     view_stack(stack)
     </div></code></div></pre>
     <div style="text-align:left; padding: 10px;">The output of the above code.</div>
-<pre class="lang-py prettyprint prettyprinted"><div class="output"><code class="code_disp" id="disp">Compiling Code ...</code><code class="code_norm" id="norm" style="display:none"><?php $command='python3.7 cgi-bin/'.$_GET['dat'].'.1.py ';$python=`$command`;echo$python;?></code></div></pre>
+<pre class="lang-py prettyprint prettyprinted"><div class="output"><code class="code_disp" id="disp">Compiling Code ...</code><code class="code_norm" id="norm" style="display:none"><?php $command='python3.7 cgi-bin/'.$_GET['dat'].'.py ';$python=`$command`;echo$python;?></code></div></pre>
 <?php    }
 }
 ?>

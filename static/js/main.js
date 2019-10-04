@@ -48,6 +48,10 @@ $('li.navs.0').on('click touch', (dat) => {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 })
 $('li.navs.1').on('click touch', function () {
     $('.navs.0').css({
@@ -99,6 +103,10 @@ $('li.navs.1').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.2').on('click touch', function () {
     $('.navs.0').css({
@@ -150,6 +158,10 @@ $('li.navs.2').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.3').on('click touch', () => {
     $('.navs.0').css({
@@ -201,6 +213,10 @@ $('li.navs.3').on('click touch', () => {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.4').on('click touch', function () {
     $('.navs.0').css({
@@ -252,6 +268,10 @@ $('li.navs.4').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.5').on('click touch', function () {
     $('.navs.0').css({
@@ -303,6 +323,10 @@ $('li.navs.5').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.6').on('click touch', function () {
     $('.navs.0').css({
@@ -354,6 +378,10 @@ $('li.navs.6').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.7').on('click touch', function () {
     $('.navs.0').css({
@@ -405,6 +433,10 @@ $('li.navs.7').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.8').on('click touch', function () {
     $('.navs.0').css({
@@ -456,6 +488,10 @@ $('li.navs.8').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.9').on('click touch', function () {
     $('.navs.0').css({
@@ -507,6 +543,10 @@ $('li.navs.9').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.10').on('click touch', function () {
     $('.navs.0').css({
@@ -558,6 +598,10 @@ $('li.navs.10').on('click touch', function () {
         color: 'black',
         'background-color': 'grey'
     });
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
 });
 $('li.navs.11').on('click touch', function () {
     $('.navs.0').css({
@@ -610,6 +654,65 @@ $('li.navs.11').on('click touch', function () {
         color: 'white',
         'background-color': 'black'
     })
+    $('.navs.12').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
+});
+$('li.navs.12').on('click touch', function () {
+    $('.navs.0').css({
+        'background-color': 'grey',
+        color: 'black'
+    });
+    loadPage(13, "Linked Lists")
+    $('.navs.1').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.2').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.3').css({
+        'background-color': 'grey',
+        color: 'black'
+    });
+    $('.navs.4').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.5').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.6').css({
+        'background-color': 'grey',
+        color: 'black'
+    });
+    $('.navs.7').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.8').css({
+        color: 'black',
+        'background-color': 'grey'
+    });
+    $('.navs.9').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
+    $('.navs.10').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
+    $('.navs.11').css({
+        color: 'black',
+        'background-color': 'grey'
+    })
+    $('.navs.12').css({
+        color: 'white',
+        'background-color': 'black'
+    })
 });
 $('.login').on('click', () => {
     window.location = '/login.php'
@@ -633,6 +736,9 @@ loadPage = (index, title) => {
                 break
             case 12:
                     window.location.href = "/ds-content/toh.php?t=" + encodeURI(title);
+                break
+            case 13:
+                window.location.href = "/ds-content/lists.php?t=" + encodeURI(title);
                 break
             default:
                 alert('Page not found. Contact Management')

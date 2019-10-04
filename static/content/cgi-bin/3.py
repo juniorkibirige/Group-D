@@ -21,8 +21,7 @@ def pop(obj):
     if isEmpty(obj):
         return "Stack is empty cannot pop"  # return minus infinite
     else:
-        obj.pop()
-        return obj[-1], "popped from stack"
+        return obj.pop(), "popped from stack"
 
 def view_stack(ob):
     return ob

@@ -40,7 +40,6 @@ class Navigation extends React.Component {
     render() {
         return (
             <div className="nav" style={{marginBottom: 20 + 'px'}}>
-                <NumTowers value={this.props.vt} onChange={()=>this.props.toC()}/>&nbsp;&nbsp;
                 <SpeedCheck value={this.props.vs} onChange={()=> this.props.soC()}/>    
                 <PlayButton hC={this.props.hC} state={this.props.state} />
             </div>
@@ -54,6 +53,7 @@ class Towers extends React.Component {
             <div className="t" accessKey={this.props.value} ref={tower => {this.tower = tower;}}>
                 <div className="pole"></div>
                 <div className="base"></div>
+                <div className="tower_name">{this.props.name}</div>
             </div>
         );
     }
@@ -63,7 +63,7 @@ class Platter extends React.Component {
     render() {
         var w = this.props.s;
         var p = this.props.p;
-        var mt = this.props.t;
+        var mt = this.props.t+25;
         var l = this.props.l;
         let c = "platter" + this.props.value + " platter";
         return (
@@ -94,7 +94,7 @@ class ToH extends React.Component {
         }
     }
     renderTower(i) {
-        return <Towers value={i+1} key={i+1}/>;
+        return <Towers value={i+1} key={i+1} name={"Tower "+(i+1)}/>;
     }
     renderPlatter(i, wdth, pad, top, left) {
         return <Platter key={i} value={i} s={wdth} p={pad} t={top} l={left}/>;
@@ -117,7 +117,7 @@ class ToH extends React.Component {
                 d.classList.add('moveOff')
                 // d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; bottom: 130px; left: 56.5%;');
                 var st = setTimeout(()=>{
-                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; bottom: 130px; left: 37.8%;');
+                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; bottom: 150px; left: 37.8%;');
                 }, 1500)
                 st
                 var ts = setTimeout(()=>{
@@ -126,7 +126,7 @@ class ToH extends React.Component {
                 ts
                 this.state.tw0.push(this.state.tw1.pop())
                 var rem = setTimeout(()=>{
-                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:37.8%; bottom:30px;');
+                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:37.8%; bottom:50px;');
                     d.classList.remove('moveOff','moveOn')
                 },4000)
                 rem
@@ -152,7 +152,7 @@ class ToH extends React.Component {
                 ts
                 this.state.tw1.push(this.state.tw2.pop())
                 var rem = setTimeout(()=>{
-                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:47.3%; bottom:40px;');
+                    d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:47.3%; bottom:60px;');
                     d.classList.remove('moveOff','moveRight_once','moveOn')
                 },4000)
                 rem
@@ -173,7 +173,7 @@ class ToH extends React.Component {
                 ts
                 this.state.tw1.push(this.state.tw0.shift())
                 var rem = setTimeout(()=>{
-                    d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:46.4%; bottom:40px;');
+                    d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:46.4%; bottom:60px;');
                     d.classList.remove('moveOff','moveLeft_once','moveOn')
                     d.classList.add('stayPut')
                 },4000)
@@ -189,7 +189,7 @@ class ToH extends React.Component {
                 d.classList.remove('stayPut')
                 d.classList.add('moveOff')
                 var st = setTimeout(()=>{
-                    d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:56%; bottom:50px;');
+                    d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:56%; bottom:70px;');
                 }, 1500)
                 st
                 var ts = setTimeout(()=>{
@@ -199,11 +199,11 @@ class ToH extends React.Component {
                 this.state.tw2.push(this.state.tw1.pop())
                 var rem = setTimeout(()=>{
                     if(parseInt(d.getAttribute('data-index')) == 0)
-                        d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:30px;');
+                        d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:50px;');
                     else if(parseInt(d.getAttribute('data-index')) == 2)
-                        d.setAttribute('style', 'width: 80px; text-align: center; margin-left: 20px; left:55%; bottom:50px;');
+                        d.setAttribute('style', 'width: 80px; text-align: center; margin-left: 20px; left:55%; bottom:70px;');
                     else if(parseInt(d.getAttribute('data-index')) == 1)
-                        d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:55.8%; bottom:55px;');
+                        d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:55.8%; bottom:75px;');
                     d.classList.remove('moveOff','moveLeft_twice','moveOn')
                     d.classList.add('stayPut')
                 },4000)
@@ -223,12 +223,12 @@ class ToH extends React.Component {
                 this.state.tw2.push(this.state.tw0.shift())
                 var rem = setTimeout(()=>{
                     if(parseInt(d.getAttribute('data-index')) == 0){
-                        !end ? d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:30px;'):d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:60px;');
+                        !end ? d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:50px;'):d.setAttribute('style', 'width: 40px; text-align: center; margin-left: 20px; left:56.5%; bottom:80px;');
                     }
                     else if(parseInt(d.getAttribute('data-index')) == 2)
-                        d.setAttribute('style', 'width: 80px; text-align: center; margin-left: 20px; left:55%; bottom:50px;');
+                        d.setAttribute('style', 'width: 80px; text-align: center; margin-left: 20px; left:55%; bottom:70px;');
                     else if(parseInt(d.getAttribute('data-index')) == 1)
-                        d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:56.5%; bottom:30px;');
+                        d.setAttribute('style', 'width: 60px; text-align: center; margin-left: 20px; left:56.5%; bottom:50px;');
                     d.classList.remove('moveOff','moveLeft_twice','moveOn')
                     d.classList.add('stayPut')
                 },4000)
